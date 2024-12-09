@@ -1,0 +1,87 @@
+.CounterModules {
+  display: grid;
+}
+
+.VoteTitle {
+  text-align: center;
+  border: solid;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px -2px gray;
+  height: 48px;
+  margin-bottom: auto;
+  margin-top: 0px;
+}
+
+.Vote {
+  margin-top: 16px;
+  display: grid;
+  grid-auto-rows: 80px;
+  grid-template-columns: 152px 152px;
+  column-gap: 16px;
+  justify-content: center;
+}
+
+.VoteButtonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.Approved {
+  text-align: center;
+  color: white;
+  border-radius: 6px;
+  background-color: seagreen;
+  box-shadow: 0px 4px 4px -2px gray;
+  height: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Rejected {
+  text-align: center;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  box-shadow: 0px 4px 4px -2px gray;
+  height: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Same {
+  text-align: center;
+  border-radius: 6px;
+  background-color: gray;
+  color: white;
+  box-shadow: 0px 4px 4px -2px gray;
+  height: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Result {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.Card {
+  text-align: center;
+  border: solid;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0px 4px 4px -2px gray;
+}
+
+.Num {
+  border-bottom: solid;
+}

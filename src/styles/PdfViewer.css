@@ -1,0 +1,11 @@
+.pdfViewer {
+    border: solid;
+    height: 84vh;
+    width: auto;
+}
+
+.pdfComponent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

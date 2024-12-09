@@ -1,0 +1,86 @@
+.TimerModules {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.TimerCounter {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  border-color: black;
+  justify-content: center;
+}
+
+.TimerCount {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.Normal {
+  background-color: #ffffff;
+  border: solid;
+  border-color: gray;
+  font-size: 56px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 4px 4px -2px gray;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.Caution {
+  background-color: #F2E700;
+  border: solid;
+  border-color: gray;
+  font-size: 56px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 4px 4px -2px gray;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.Alert {
+  background-color: #FF4B00;
+  color: #ffffff;
+  font-size: 56px;
+  border: solid;
+  border-color: black;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 4px 4px -2px gray;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.SecondsButtonGroup {
+  width: fit-content;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.MinutesButtonGroup {
+  width: fit-content;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.TextFieldTimer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.TextGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}

@@ -1,0 +1,7 @@
+.digitText {
+    border: solid;
+    border-color: aqua;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: white;
+}
