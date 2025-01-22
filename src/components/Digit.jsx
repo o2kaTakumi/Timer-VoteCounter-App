@@ -3,7 +3,7 @@ import "../styles/Digit.css";
 
 const weekday = ["日", "月", "火", "水", "木", "金", "土"];
 
-const Digit = () => {
+function Digit() {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [loading, setLoading] = useState(true);

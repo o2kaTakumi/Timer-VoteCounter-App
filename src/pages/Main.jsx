@@ -6,10 +6,10 @@ import Counter from "./Counter";
 
 import "../styles/Main.css";
 
-const Main = ({clickedButton}) => {
+function Main(props) {
   return (
     <div className="Main">
-      { clickedButton ? <Timer /> : <Counter /> }
+      { props.clickedButton ? <Timer /> : <Counter /> }
       {/* <PdfViewer /> */}
       {/* <PdfViewer /> */}
     </div>

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 import { Button, ButtonGroup } from '@mui/material';
 
-import Digit from './modules/Digit'
+import Digit from './components/Digit'
 import Main from './pages/Main';
 
 import './styles/App.css'
 
-const App = () => {
+function App() {
   const [clickedButton, setClickedButton] = useState(true); //どっちのボタンが押されているかを管理する変数 true->タイマー false->カウンター
   const [timerButtonVariant, setTimerButtonVariant] = useState('contained'); //タイマーボタンの見た目の変数
   const [counterButtonVariant, setCounterButtonVariant] = useState('text'); //カウンターボタンの見た目の変数
