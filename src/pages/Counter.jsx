@@ -43,23 +43,6 @@ function Counter() {
   //場内票数
   const [jounai, setJounai] = useState('');
 
-  //場内票数のTextFieldの変更可能状態
-  const [jounaiText, setJounaiText] = useState('disabled');
-
-  //場内票数の変更ボタンの見た目
-  const [jounaiChangeButton, setJounaiChangeButton] = useState('outlined');
-
-  //場内変数の変更ボタンの機能
-  const ChangeJounaiText = () => {
-    if(jounaiText === 'disabled') {
-      setJounaiText('');
-      setJounaiChangeButton('contained');
-    } else {
-      setJounaiText('disabled');
-      setJounaiChangeButton('outlined');
-    }
-  }
-
   //ダイアログを開く操作
   const handleClickOpen = () => {
     setOpen(true);
@@ -149,14 +132,11 @@ function Counter() {
         <TextField variant="filled" size="small" label="反対2票" value={twoVoteDisagree} onKeyDown={ e => { if(e.code === 'Enter') { e.target.blur(); } } } onChange={ (e) => setTwoVoteDisagree(e.target.value) } />
         <TextField variant="filled" size="small" label="賛成3票" value={threeVoteAgree} onKeyDown={ e => { if(e.code === 'Enter') { e.target.blur(); } } } onChange={ (e) => setThreeVoteAgree(e.target.value) } />
         <TextField variant="filled" size="small" label="反対3票" value={threeVoteDisagree} onKeyDown={ e => { if(e.code === 'Enter') { e.target.blur(); } } } onChange={ (e) => setThreeVoteDisagree(e.target.value) } />
-        <TextField variant="outlined" label="議長委任票" value={gicho} onKeyDown={ e => { if(e.code === 'Enter') { e.target.blur(); } } } onChange={ (e) => setGicho(e.target.value) } />
+        <TextField variant="standard" label="議長委任票" value={gicho} onKeyDown={ e => { if(e.code === 'Enter') { e.target.blur(); } } } onChange={ (e) => setGicho(e.target.value) } />
+        <TextField variant="standard" label="場内票数" value={jounai} onKeyDown={ e => { if(e.code === 'Enter') { e.target.blur(); } } } onChange={ (e) => setJounai(e.target.value) } />
         <div className="VoteButtonGroup">
           <Button size="small" variant="contained" onClick={Vote}>採決</Button>
           <Button size="small" className="ResetButton" variant="outlined" onClick={handleClickOpen}>リセット</Button>
-        </div>
-        <div>
-          <TextField label="場内票数" disabled={jounaiText} value={jounai} onKeyDown={ e => { if(e.code === 'Enter') { e.target.blur(); } } } onChange={ (e) => setJounai(e.target.value) } />
-          <Button variant={jounaiChangeButton} onClick={ChangeJounaiText} >場内票数変更</Button>
         </div>
       </div>
       <div className="Result">
